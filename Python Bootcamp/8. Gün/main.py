@@ -42,7 +42,7 @@ c.bilgiYazdir()
 # super tekrar tekrar kod yazmamamızı sağlıyor
 # yukarıdaki insan sınıfından aşağıdaki sınıfa değerleri alabiliyoruz
 
-# Polimorfizim(birçok şekil)
+# Polimorfizm(birçok şekil)
 # bir metodun farklı işler yapması anlamına gelir
 """
 class Insan:
