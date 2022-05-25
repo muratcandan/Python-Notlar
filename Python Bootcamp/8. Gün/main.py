@@ -1,6 +1,6 @@
 # Önceki ders tekrarı
 # init contructor(yapıcı) metod
-# self diğer metodlara ulaşmayı saylayan bir keyworld
+# self diğer metodlara ulaşmayı sağlayan bir keyworld
 """
 class Car:
     def __init__(self):
