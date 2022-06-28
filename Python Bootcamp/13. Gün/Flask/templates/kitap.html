@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<ul>
+    {% for d in veri %}
+
+    <div class="book">
+
+        <a href = "/book/{{d[0]}}">
+        <h4> {{ d[1] }}</h4></a>
+
+        <div>
+            <b>Yazar : </b>{{ d[2] }}
+            <b>Basım Yılı :</b> {{ d[3] }}
+        </div>
+
+        <form action="/bookdelete/{{ d[0] }}">
+            <input type="submit" value="Sil">
+        </form>
+
+
+        <form action="/bookedit/{{ d[0] }}">
+            <input type="submit" value="Guncelle">
+        </form>
+
+
+    </div>
+
+    {% endfor %}
+</ul>
+
+
+
+
+{% endblock %}
