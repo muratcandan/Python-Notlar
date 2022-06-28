@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block content %}
+
+<form method="post">
+  <input type="hidden" name="id" value="{{ veri[0] }}" /><br />
+  <label> Ürün Adı : </label>
+  <input type="text" name="product_name" value="{{ veri[1] }}" /><br />
+  <label> Ürün Çeşidi : </label>
+  <input type="text" name="product_type" value="{{ veri[2] }}" /><br />
+  <label> Ürün Fiyatı(TL) : </label>
+  <input type="text" name="product_price" value="{{ veri[3] }}" /><br />
+  <label> Tarih : </label>
+  <input type="text" name="history" value="{{ veri[4] }}" /><br />
+  <label> Kullanıcı : </label>
+  <input type="text" name="user" value="{{ veri[5] }}" /><br />
+  <label> Kalan Para : </label>
+  <input type="text" name="kalanpara" value="{{ veri[6] }}" /><br />
+  <input type="submit" />
+</form>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block content %}
+
+<div style="text-align: center" class="product">
+  <h3>Ürünün Detayları :</h3>
+  <h4>Ürün: {{ veri[1] }}</h4>
+  <p>Çeşit : {{ veri[2] }}</p>
+  <p>Fiyat : {{ veri[3] }}</p>
+  <p>Tarih : {{ veri[4] }}</p>
+  <p>Kullanıcı : {{ veri[5] }}</p>
+  <p>Kalan Para : {{ veri[6] }}</p>
+  <p><b>Not: Güncel olup olmadığını tarihten kontrol ediniz!</b></p>
+</div>
+
+{% endblock %}

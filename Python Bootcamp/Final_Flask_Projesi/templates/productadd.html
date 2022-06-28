@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block content %}
+
+<form style="text-align: center; margin: 10px" method="post">
+  <img
+    style="height: 300px; margin-bottom: 10px"
+    src="https://i0.wp.com/mobitek.com/wp-content/uploads/2019/11/google-alisveris-reklamlari.jpg?fit=640%2C400&ssl=1"
+    alt=""
+  />
+  <br />
+  <label> Ürün Adı : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+  <input type="text" name="product_name" /><br />
+  <label> Ürün Çeşidi : &nbsp&nbsp&nbsp&nbsp&nbsp </label>
+  <input type="text" name="product_type" /><br />
+  <label> Ürün Fiyatı(TL) : </label>
+  <input type="text" name="product_price" /><br />
+  <label>
+    Tarih :
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  </label>
+  <input type="text" name="history" /><br />
+  <label>
+    Kullanıcı : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  </label>
+  <input type="text" name="user" /><br />
+  <label> Kalan Para : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </label>
+  <input type="text" name="kalanpara" /><br />
+  <input type="submit" />
+</form>
+
+{% endblock %}

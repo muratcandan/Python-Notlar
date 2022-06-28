@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block content %}
+
+<ul>
+  {% for d in veri %}
+
+  <div class="product">
+    <a href="/urundetay/{{d[0]}}"> <h4>{{ d[1] }}</h4></a>
+
+    <div>
+      <b>Ürün Çeşidi : </b>{{ d[2] }} <br />
+      <b>Ürün Fiyatı(TL) : </b> <br />
+      {{ d[3] }} <b>Tarih :</b> <br />
+      {{ d[4] }} <b>Kullanıcı :</b> <br />
+      {{ d[5] }}
+      <b>Kalan Para :</b> <br />
+      {{ d[6] }}
+    </div>
+
+    <form action="/productdelete/{{ d[0] }}">
+      <input type="submit" value="Sil" />
+    </form>
+
+    <form action="/productedit/{{ d[0] }}">
+      <input type="submit" value="Guncelle" />
+    </form>
+  </div>
+
+  {% endfor %}
+</ul>
+
+{% endblock %}
