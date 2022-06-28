@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block content %}
+
+<form method="post">
+  <label>Kitap Adı:</label>
+  <input type="text" name="bookTitle" /><br />
+  <label>Yazarı:</label>
+  <input type="text" name="bookAutor" /><br />
+  <label>Çıkış Yılı:</label>
+  <input type="text" name="bookYear" /><br />
+  <input type="submit" />
+</form>
+
+{% endblock %}
